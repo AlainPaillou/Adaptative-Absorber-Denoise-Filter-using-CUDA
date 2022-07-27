@@ -16,7 +16,7 @@ The filter gets one parameter : dynamic response of the filter which can get 2 v
 0 : low dynamic response. Will give better quality but ghosting will be high
 1 : high dynamic response. Will give lower quality but ghosting will be low
 
-This filter compare 2 images (N-1 and N). It allow big changes and decrease small changes for each pixel.
+This filter first compare 2 images (N-1 and N) to generate the result image. Then, the result image is processed with the new image to create a new result image and so on.
 
 I created this filter for astronomy use (wide field deep sky survey).
 
